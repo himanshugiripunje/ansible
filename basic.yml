@@ -1,0 +1,14 @@
+#dictionary
+
+martin:
+  name: cloudblitz
+  job: developer
+  skill: aws
+
+akash: 
+  name: company
+  job: devops
+  skils: 
+    - devops
+    - linux
+    - networking
