@@ -2,9 +2,9 @@
   hosts: all
   tasks:
   - name: print  the uptime
-    - shell: uptime
-    - register: OUT
+  - shell: uptime
+  - register: OUT
 
-    - name: print out
-      debug:
-        msg: "{{OUT.stdout}}"
+  - name: print out
+     debug:
+       msg: "{{OUT.stdout}}"
