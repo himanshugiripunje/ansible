@@ -6,5 +6,5 @@
   - register: OUT
 
   - name: print out
-     debug:
-       msg: "{{OUT.stdout}}"
+    debug:
+      msg: "{{OUT.stdout}}"
