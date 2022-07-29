@@ -1,7 +1,7 @@
 - name: registering vars
   hosts: all
   tasks:
-    - name: print uptime
+  - name: print  the uptime
     - shell: uptime
     - register: OUT
 
