@@ -1,11 +1,12 @@
-- name: registering vars
+- name: registering vrs
   hosts: all
   tasks:
-   - name: print the uptime
+   - name: print that out
      shell: uptime
      register: OUT
 
    - name: print out
      debug:
        msg: "{{OUT.stdout}}"
- 
+
+  
