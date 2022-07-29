@@ -1,7 +1,7 @@
 - name: registering vrs
   hosts: all
   tasks:
-   - name: print that out
+   - name: print that uptime
      shell: uptime
      register: OUT
 
@@ -9,4 +9,11 @@
      debug:
        msg: "{{OUT.stdout}}"
 
-  
+
+   - name: print present working directory
+     shell: pwd
+     register: WORK
+
+   - name: print pwd
+     debug: 
+       msg: "{{WORK.stdout}}"
