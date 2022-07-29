@@ -1,14 +1,16 @@
+#list
+
+
+fruits:
+  - apple
+  - mango
+  - banana
+
 #dictionary
 
 martin:
-  name: cloudblitz
+  name: himanshu
   job: developer
-  skill: aws
-
-akash: 
-  name: company
-  job: devops
-  skils: 
-    - devops
+  skill:
+    - aws
     - linux
-    - networking
