@@ -1,2 +1,2 @@
-root_location: /var/www/html
+root_location: /var/www/html/
 proxy_file: /etc/httpd/conf.d
