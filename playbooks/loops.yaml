@@ -1,8 +1,8 @@
-- name: add users
-  user: 
-    name: "{{item}}"
+- name: Add several users
+  user:
+    name: "{{ item }}"
     state: present
     groups: "wheel"
-  loop: 
-    - testuser1
-    - testuser2
+  loop:
+     - testuser1
+     - testuser2
