@@ -11,7 +11,7 @@
 - name: content of index file
   get_url:
     url: https://heat-buck.s3.ap-south-1.amazonaws.com/index.html
-    dest: "{{root_location}}/index.html"
+    dest: "{{root_location}}"
 
 - name: copy proxy file
   copy:
