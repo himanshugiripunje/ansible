@@ -1,0 +1,9 @@
+- name: ignore
+  hosts: all
+  tasks: 
+    - name: checking process
+      shell: ps -aux | grep -java | grep -v java
+      ignore_errors: yes
+       - name: hello its
+         debug: 
+           msg: my taskkkkkkk is runnnnnnnnnnning
