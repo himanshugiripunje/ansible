@@ -5,5 +5,5 @@
       shell: ps -aux | grep -java | grep -v java
       ignore_errors: yes
     - name: hello its
-        debug: 
-          msg: my taskkkkkkk is runnnnnnnnnnning
+      debug: 
+        msg: my taskkkkkkk is runnnnnnnnnnning
