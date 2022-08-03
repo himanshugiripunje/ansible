@@ -1,0 +1,31 @@
+- name: install httpd
+  yum: 
+    state: present
+    name: httpd
+
+- name: service httpd start
+  service:
+    name: httpd
+    state: started
+
+- name: content of index file
+  get_url:
+    url: https://heat-buck.s3.ap-south-1.amazonaws.com/index.html
+    dest: "{{root_location}}/index.html"
+
+- name: copy proxy file
+  copy:
+    src: proxy.conf
+    dest: "{{proxy_file}}/proxy.conf" 
+
+
+
+
+
+  
+
+
+
+
+
+
